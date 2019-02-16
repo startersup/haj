@@ -8,7 +8,6 @@ body
 {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-   
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -53,7 +52,7 @@ body
 
 #myTopnav
 {
-    padding-left:320px;
+    padding-left:250px;
 }
 
 .topnav {
@@ -82,7 +81,7 @@ body
 {
     color:#000000 !important;
        font-family: 'Francois One', sans-serif;
-     font-size:20px;
+     font-size:18px;
     margin:0px 3px;
     line-height:29px;
     font-weight:400;
@@ -169,16 +168,6 @@ body
     display: block;
     background: #fff;
     border-radius: 10px 0 0 10px;
-}
-.tb-pass-card .vertical-tabs {
-    position: absolute;
-    top: -3px;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 0;
-    background: url(https://testbook.com/assets/img/utility/tb-pass-edge.svg);
-    background-size: 18px;
-    width: 13px;
 }
 /*----fadein fadeout text--*/
 @keyframes fadeInRight {
