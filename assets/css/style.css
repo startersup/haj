@@ -7,6 +7,8 @@
 body
 {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+   
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -28,11 +30,12 @@ body
 }
 .navbar-default{
   transition:500ms ease;
-  background-color:#eaeaea !important;
+  background-color:transparent !important;
        color: #000000!important;
     border:none !important;
+    z-index: 100;
     min-height:52px !important;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -42,7 +45,7 @@ body
 
 .navbar-brand span
 {
-     font-family: 'Poppins', sans-serif;
+     font-family: 'Francois One', sans-serif;
    font-size:22px;
     color:#000000;
     
@@ -78,16 +81,17 @@ body
 .navbar-nav>li a
 {
     color:#000000 !important;
-        font-family: 'Poppins', sans-serif;
-     font-size:16px;
+       font-family: 'Francois One', sans-serif;
+     font-size:20px;
+    margin:0px 3px;
     line-height:29px;
     font-weight:400;
 }
  .navbar-nav>li a:hover
 {
     color:#000000 !important;
-     font-family: 'Poppins', sans-serif;
-    border-bottom:2px solid #e6096a;
+       font-family: 'Francois One', sans-serif;
+    border-bottom:2px solid #f72f25;
 }
 #borderimg1 { 
   border: 10px solid transparent;
@@ -102,7 +106,7 @@ body
   border-image: url(../images/border.png) 30 stretch;
 }
 .buttonsign {
-  background-color: #e6096a;
+  background-color:#f72f25;
   border: none;
   color: white;
     border-radius:5px 20px;
@@ -113,7 +117,7 @@ body
   font-size: 14px;
   margin: 6px 4px;
   cursor: pointer;
- font-family: 'Poppins', sans-serif;
+ font-family: 'Francois One', sans-serif;
 }
 .buttonexplore {
   background-color: #f72f25;
@@ -126,6 +130,92 @@ body
   font-size: 18px;
   margin: 6px 4px;
   cursor: pointer;
- font-family: 'Poppins', sans-serif;
+ font-family: 'Francois One', sans-serif;
 }
 
+.bgimage
+{
+    max-width:700px;
+    width:100%;
+}
+.main
+{
+    padding-top:80px;
+   
+}
+.main h1
+{
+  font-family: 'Francois One', sans-serif;
+    line-height:60px;
+    font-size:30px;
+    letter-spacing: 0.5px;
+}
+.container1
+{
+    padding:10px 50px;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.tb-pass-card::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 12px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background: #fff;
+    border-radius: 10px 0 0 10px;
+}
+.tb-pass-card .vertical-tabs {
+    position: absolute;
+    top: -3px;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    background: url(https://testbook.com/assets/img/utility/tb-pass-edge.svg);
+    background-size: 18px;
+    width: 13px;
+}
+/*----fadein fadeout text--*/
+@keyframes fadeInRight {
+  from { 
+    opacity: 0;
+    -webkit-transform: translate3d(10%, 0%, 0);
+    transform: translate3d(10%, 0%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.first {
+ 
+  opacity: 0; 
+ 
+  animation: fadeInRight 1s ease-in-out 0s forwards;
+    
+}
+ 
+  &.first {
+    animation-delay: 1s;
+  }
+
+/*----fadein fadeout text--*/
+
+
+
+@media only screen and (max-width: 600px) {
+    .main h1
+{
+  font-family: 'Francois One', sans-serif;
+    line-height:40px;
+    font-size:25px;
+    letter-spacing: 1px;
+}
+}
