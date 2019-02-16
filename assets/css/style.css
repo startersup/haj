@@ -28,7 +28,7 @@ body
 }
 .navbar-default{
   transition:500ms ease;
-  background-color:#edf5f9 !important;
+  background-color:#eaeaea !important;
        color: #000000!important;
     border:none !important;
     min-height:52px !important;
@@ -105,6 +105,7 @@ body
   background-color: #e6096a;
   border: none;
   color: white;
+    border-radius:5px 20px;
   padding: 8px 20px;
   text-align: center;
   text-decoration: none;
