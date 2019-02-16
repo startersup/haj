@@ -325,4 +325,9 @@ fadeInRight {
    padding: 10px !important;
    margin: 10px !important;
 }
+    section {
+   padding: 0px !important; 
+    z-index: -20px;
+    min-height: 100vh;
+}
 }
