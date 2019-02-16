@@ -9,59 +9,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Poppins|Bree+Serif|Francois+One|Fredoka+One|Roboto:500" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-    <body>
-    <nav class="navbar navbar-default navit navbar-fixed-top">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-               <span> <img class="logo" src="assets/images/logo1.png"> Al Malik 
-<!--                   <small style="font-size:13px;color:#E6096A;font-weight:600;">Haj Services</small>--> </span>
-            </a>
-        </div>
-        <div class="collapse navbar-collapse " id="myNavbar">
-            <ul class="nav navbar-nav topnav hidden-xs hidden-sm" id="myTopnav">
-                <li><a href="./index.html">Home</a>
-                </li>
-                <li><a href="./about/">About</a>
-                </li>
-                <li><a href="./guide">Guide</a>
-                </li>
-                <li><a href="./pricing">Services</a>
-                </li>
-                <li><a href="./Customers">Gallery</a>
-                </li>
-                <li><a href="./careers">Packages</a>
-                </li>
-                  <li><a href="./careers">Blog</a>
-                </li>
-                <li><a href="./contact">Contact</a>
-                </li>
-                <li><button class="buttonsign">Book Online</button></li>
-            </ul>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="#">
+                    <span> <img class="logo" src="assets/images/logo1.png"> Al Malik</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#main">Home</a>
+                    </li>
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="./guide">Guide</a>
+                    </li>
+                    <li><a href="./pricing">Services</a>
+                    </li>
+                    <li><a href="./Customers">Gallery</a>
+                    </li>
+                    <li><a href="./careers">Packages</a>
+                    </li>
+                    <li><a href="./careers">Blog</a>
+                    </li>
+                    <li><a href="./contact">Contact</a>
+                    </li>
+                    <li>
+                        <button class="buttonsign">Book Online</button>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-        <section class="main">
-            <div class="container">
-        <div class="row">
-            <div class="col-md-5 nopadding">
-                    <div class="first">
-            <h1>Looking for the Most Memorable Trip in your Life?</h1>
-                <button class="buttonexplore">Call us at : +91 044 32000042</button>
+    <section class="main" id="main">
+        <br><br><br>
+        <div class="container first">
+            <div class="row">
+                <div class="col-md-5 nopadding">
+                    <div class="">
+                        <h1>Journey To Hajj From India!</h1>
+                        <div id="borderimg1">
+                            <center>
+                                <form class="form-inline" action="/action_page.php">
+                                    <div class="form-group">
+                                        <input type="text" class="controls" placeholder="Enter your Name" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="controls" placeholder="Enter Email Address" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="controls" placeholder="Enter Contact Number" name="name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="controls" placeholder="Enter Alternate Number" name="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="selectit controls" name="np" required="">
+                                            <option value="1">Select Package</option>
+                                            <option value="2">15 Days</option>
+                                            <option value="3">16 Days</option>
+                                            <option value="4">20 Days</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select class="selectit controls" name="np" required="">
+                                            <option value="1">Select Package</option>
+                                            <option value="2">15 Days</option>
+                                            <option value="3">16 Days</option>
+                                            <option value="4">20 Days</option>
+                                        </select>
+                                    </div>
+                                </form> <br><p>Call us at :+91 044 32000042</p>
+                                <button class="buttonexplore">Get Quote</button><br>
+                               
+                            </center>
                         </div>
+                    </div>
                 </div>
-            
-            <div class="col-md-7 nopadding">
-            <img class="bgimage" src="assets/images/bg.png">
+
+                <div class="col-md-7 nopadding">
+                    <center>
+                        <img class="bgimage" src="assets/images/bg.png">
+                    </center>
+                </div>
             </div>
-            </div>
-        
-            </div>
-        </section>
-       
-    </body>
+        </div>
+    </section>
+<section class="about gray" id="about">
+    <div class="container border" id="borderimg2">
+        <center><div class="back">
+          
+    <h1>About Al Malik </h1>
+    <h3>Welcome to Al Malik Haj Service Haj & Umrah</h3></div></center><br>
+          <div class="row">
+              <div class="col-md-4"><center><img src="./assets/images/bucbg.png"></center></div>
+              <div class="col-md-8">
+    <p>Al-Malik Haj Service Haj and Umrah services was founded in the year 2015. To exclusively cater to Haj & Umrah pilgrims Al_Malik Haj Service Haj Services is equipped with well experienced staff, Qualified Aalims and Aalima who render personal services to each pilgrim, conduct orientation classes to pilgrims before departure and also accompany the groups during pilgrimage.</p><br>
+    <p>The company is carrying out business of tourists and travel agents,transport agents and contractors, to deal in tourism,to arrange and operate tours and facilitate travelling provide for tourists and travellers boarding and lodging facilities and prode services by acting as representatives of air lines-and steam ship-lines, railways and other carriers,whether in India or abroad.</p>
+        </div></div></div>
+    </section>
+</body>
 
 </html>

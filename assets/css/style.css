@@ -4,6 +4,10 @@
     height:35px;
     margin-top:-5px;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body
 {
     font-family: 'Poppins', sans-serif;
@@ -29,11 +33,11 @@ body
 }
 .navbar-default{
   transition:500ms ease;
-  background-color:transparent !important;
+  background-color:#ffffff !important;
        color: #000000!important;
     border:none !important;
-    z-index: 100;
-    min-height:52px !important;
+    min-height:53px !important;
+    z-index:10;
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -52,7 +56,7 @@ body
 
 #myTopnav
 {
-    padding-left:250px;
+    padding-left:320px;
 }
 
 .topnav {
@@ -81,7 +85,7 @@ body
 {
     color:#000000 !important;
        font-family: 'Francois One', sans-serif;
-     font-size:18px;
+     font-size:19px;
     margin:0px 3px;
     line-height:29px;
     font-weight:400;
@@ -90,7 +94,7 @@ body
 {
     color:#000000 !important;
        font-family: 'Francois One', sans-serif;
-    border-bottom:2px solid #f72f25;
+    border-bottom:3px solid #e6096a;
 }
 #borderimg1 { 
   border: 10px solid transparent;
@@ -105,10 +109,10 @@ body
   border-image: url(../images/border.png) 30 stretch;
 }
 .buttonsign {
-  background-color:#f72f25;
+  background-color: #e6096a;
   border: none;
   color: white;
-    border-radius:5px 20px;
+    border-radius:20px 20px;
   padding: 8px 20px;
   text-align: center;
   text-decoration: none;
@@ -131,50 +135,136 @@ body
   cursor: pointer;
  font-family: 'Francois One', sans-serif;
 }
-
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
 .bgimage
 {
-    max-width:700px;
+    max-width:900px;
     width:100%;
 }
 .main
 {
-    padding-top:80px;
+    padding-top:50px;
    
 }
-.main h1
+.main h1,.about h1
 {
   font-family: 'Francois One', sans-serif;
     line-height:60px;
-    font-size:30px;
+    font-size:40px;
+    color:#002d48;
+    text-align: center;
     letter-spacing: 0.5px;
+}
+.main h3
+{
+  font-family: 'Francois One', sans-serif;
+    line-height:40px;
+    font-size:25px;
+    letter-spacing: 0.5px;
+}
+.about h3
+{
+    text-align: center;
+    font-family: 'Francois One', sans-serif;
+    line-height:30px;
+    color:#F73026;
+    letter-spacing:0.5px;
+    font-size:35px;
+    margin:10px 0px;
+}
+
+.about p
+{
+    text-align: left;
+    font-family: 'Francois One', sans-serif;
+    line-height:40px;
+    font-size:21px;
+}
+.gray
+{
+    background-color: #fdfdfd;
+}
+.border
+{
+    background-image: url(../images/bucbg.png)no-repeat;
 }
 .container1
 {
     padding:10px 50px;
 }
-
-.nopadding {
-   padding: 0 !important;
-   margin: 0 !important;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+    padding:10px;
 }
-.tb-pass-card::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 12px;
-    bottom: 0;
-    left: 0;
-    display: block;
-    background: #fff;
-    border-radius: 10px 0 0 10px;
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card p
+{
+    color:green;
+    font-size:16px;
+    font-weight:600;
+    letter-spacing:0.5px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+section
+{
+    padding:100px 0px;
+    z-index:-20px;
+    min-height:100vh;
+}
+.selectit {
+     width: 100%;
+    width:210px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 40px;
+    color:#767676;
+    outline: none;
+}
+.controls {
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 40px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 /*----fadein fadeout text--*/
 @keyframes fadeInRight {
   from { 
     opacity: 0;
-    -webkit-transform: translate3d(10%, 0%, 0);
-    transform: translate3d(10%, 0%, 0);
+    -webkit-transform: translate3d(10%, 0, 0);
+    transform: translate3d(10%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+fadeInRight {
+  from { 
+    opacity: 0;
+    -webkit-transform: translate3d(10%, 0, 0);
+    transform: translate3d(10%, 0, 0);
   }
 
   to {
@@ -200,11 +290,39 @@ body
 
 
 @media only screen and (max-width: 600px) {
-    .main h1
+    .main h1,.about h1
 {
   font-family: 'Francois One', sans-serif;
     line-height:40px;
     font-size:25px;
     letter-spacing: 1px;
+}
+    .about h3
+    {
+        font-size:22px;
+    }
+    .about p
+    {
+        font-size:18px;
+    }
+    .navbar-toggle
+    {
+        border:none !important;
+    }
+    .main
+    {
+        padding-top:0px;
+    }
+   section {
+  margin: 20px 0px; 
+   
+}
+    .bgimage
+{
+    margin-left:0px !important;
+}
+    .nopadding {
+   padding: 10px !important;
+   margin: 10px !important;
 }
 }
