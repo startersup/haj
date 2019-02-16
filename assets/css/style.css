@@ -1,6 +1,130 @@
-.social-part .fa{
-    padding-right:20px;
+.logo
+{
+    width:30px;
+    height:35px;
+    margin-top:-5px;
 }
-ul li a{
-    margin-right: 20px;
+body
+{
+    font-family: 'Poppins', sans-serif;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.navbar-default{
+  transition:500ms ease;
+  background-color:#edf5f9 !important;
+       color: #000000!important;
+    border:none !important;
+    min-height:52px !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent !important;
+}
+
+.navbar-brand span
+{
+     font-family: 'Poppins', sans-serif;
+   font-size:22px;
+    color:#000000;
+    
+}
+
+#myTopnav
+{
+    padding-left:320px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.navbar-nav>li a
+{
+    color:#000000 !important;
+        font-family: 'Poppins', sans-serif;
+     font-size:16px;
+    line-height:29px;
+    font-weight:400;
+}
+ .navbar-nav>li a:hover
+{
+    color:#000000 !important;
+     font-family: 'Poppins', sans-serif;
+    border-bottom:2px solid #e6096a;
+}
+#borderimg1 { 
+  border: 10px solid transparent;
+  padding: 15px;
+   border-image: url(../images/border.png) 20% round;
+}
+#borderimg2 { 
+  border: 10px solid transparent;
+  padding: 15px;
+  -webkit-border-image: url(../images/border.png) 30 stretch; /* Safari 3.1-5 */
+  -o-border-image: url(../images/border.png) 40 stretch; /* Opera 11-12.1 */
+  border-image: url(../images/border.png) 30 stretch;
+}
+.buttonsign {
+  background-color: #e6096a;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 6px 4px;
+  cursor: pointer;
+ font-family: 'Poppins', sans-serif;
+}
+.buttonexplore {
+  background-color: #f72f25;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 6px 4px;
+  cursor: pointer;
+ font-family: 'Poppins', sans-serif;
+}
+
