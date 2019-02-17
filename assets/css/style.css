@@ -48,7 +48,7 @@ body
 
 .navbar-brand span
 {
-     font-family: 'Francois One', sans-serif;
+     font-family: 'ProximaNovaBold';
    font-size:22px;
     color:#000000;
     
@@ -84,16 +84,16 @@ body
 .navbar-nav>li a
 {
     color:#000000 !important;
-       font-family: 'Francois One', sans-serif;
+     font-family: 'ProximaNovaSemibold';
      font-size:19px;
-    margin:0px 3px;
+    margin:0px px;
     line-height:29px;
     font-weight:400;
 }
  .navbar-nav>li a:hover
 {
     color:#000000 !important;
-       font-family: 'Francois One', sans-serif;
+   font-family: 'ProximaNovaSemibold';
     border-bottom:3px solid #e6096a;
 }
 #borderimg1 { 
@@ -108,6 +108,13 @@ body
   -o-border-image: url(../images/border.png) 20 stretch; /* Opera 11-12.1 */
   border-image: url(../images/border.png) 30 stretch;
 }
+#borderimg3 { 
+  border: 10px solid transparent;
+  padding: 15px;
+  -webkit-border-image: url(../images/border2.png) 30 stretch; /* Safari 3.1-5 */
+  -o-border-image: url(../images/border2.png) 20 stretch; /* Opera 11-12.1 */
+  border-image: url(../images/border2.png) 30 stretch;
+}
 .buttonsign {
   background-color: #e6096a;
   border: none;
@@ -119,8 +126,7 @@ body
   display: inline-block;
   font-size: 14px;
   margin: 6px 4px;
-  cursor: pointer;
- font-family: 'Francois One', sans-serif;
+font-family: 'ProximaNovaBold';
 }
 .buttonexplore {
   background-color: #f72f25;
@@ -133,7 +139,7 @@ body
   font-size: 18px;
   margin: 6px 4px;
   cursor: pointer;
- font-family: 'Francois One', sans-serif;
+font-family: 'ProximaNovaBold';
 }
 .nopadding {
    padding: 0 !important;
@@ -149,18 +155,22 @@ body
     padding-top:50px;
    
 }
-.main h1,.about h1
+.main h1,.about h1,.guide h1
 {
-  font-family: 'Francois One', sans-serif;
+   font-family: 'ProximaNovaBold';
     line-height:60px;
-    font-size:40px;
+    font-size:35px;
     color:#002d48;
     text-align: center;
-    letter-spacing: 0.5px;
+   
+}
+.about h1
+{
+    color:#ffffff;
 }
 .main h3
 {
-  font-family: 'Francois One', sans-serif;
+  font-family: 'ProximaNovaBold';
     line-height:40px;
     font-size:25px;
     letter-spacing: 0.5px;
@@ -168,24 +178,61 @@ body
 .about h3
 {
     text-align: center;
-    font-family: 'Francois One', sans-serif;
+    font-family: 'ProximaNovaBold';
     line-height:30px;
-    color:#F73026;
+    color:yellow;
     letter-spacing:0.5px;
-    font-size:35px;
+    font-size:30px;
     margin:10px 0px;
+}
+.guide p
+{
+  text-align: left;
+ font-family: 'ProximaNovaRgRegular';
+    line-height:40px;
+    font-size:21px;  
 }
 
 .about p
 {
     text-align: left;
-    font-family: 'Francois One', sans-serif;
+   font-family: 'ProximaNovaRgRegular';
     line-height:40px;
     font-size:21px;
+    color:#ffffff;
+}
+.pad h3
+{
+     text-align: center;
+    font-family: 'ProximaNovaBold';
+     line-height:30px;
+    color:#000;
+    letter-spacing:0.5px;
+    font-size:30px;
+    margin:10px 0px;
+}
+.pad p
+{
+    margin-top:10px;
+    padding:0px 40px; 
+    font-size:19px;
+     line-height:30px;
+     font-family: 'ProximaNovaRgRegular';
+    color:#000000 !important;
 }
 .gray
 {
-    background-color: #fdfdfd;
+   
+    opacity:0.9;
+     background-color: #000;
+      background-repeat: no-repeat;
+
+}
+.wish
+{
+    background-image: url(../images/bucbg.png);
+    padding:10px;
+    min-height:300px;
 }
 .border
 {
@@ -234,6 +281,7 @@ section
     -moz-box-sizing: border-box;
     height: 40px;
     color:#767676;
+    background-color:#f4f4f4;
     outline: none;
 }
 .controls {
@@ -244,6 +292,7 @@ section
     -moz-box-sizing: border-box;
     height: 40px;
     outline: none;
+    background-color:#f4f4f4;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 /*----fadein fadeout text--*/
@@ -304,6 +353,7 @@ fadeInRight {
     .about p
     {
         font-size:18px;
+        color:#ffffff;
     }
     .navbar-toggle
     {
