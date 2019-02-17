@@ -1,8 +1,4 @@
-/*----------------------------------------- [MASTER STYLE SHEET] * Project: The Travel * Version: v2.0 * Copyright 2016-2020 rn53themes * V1.0: 03/09/2016 * V2.0: 24/08/2017 * Author: RN53 Themes * Email: rn53themes@gmail.com * Website: http://www.rn53themes.net -----------------------------------------------*/
-/*------------------------------------------------- = TABLE OF CSS 1.COMMON CSS 2.HEADER(LOG0 & HELP LINE) 3.NAVIGATION MENU 4.SLIDER & INNER PAGE BANNER 5.SLIDER ENQUIRY 6.TOUR PLACES 6.1 HOTELS 7.FREE CONSULTANT 8.EVENTS 9.POPULAR TOUR PLACES 10.REQUEST A QUOTE 11.TIPS BEFORE TRAVEL 11.1 TIPS BEFORE TRAVEL 11.2 CUSTOMER TESTIMONIALS 11.3 ARRANGEMENTS & HELPS 12.FOOTER 1 12.1 OFFERS 12.2 MOST POPULAR VACATIONS 13.FOOTER 2 13.1 ADDRESS 13.2 SUBSCRIBE 13.2 FAQ 13.2 LOCATION 13.5 SOCIAL MEDIA 14.COPY RIGHTS 15.INNER PAGE 15.1 COMMON BANNER 15.2 ALL INNER PAGE STYLES 16.PRE LOADING 17.REVIEWS 18.TOP TRENDINGS 19.INNER PAGE LISTING 20.LISTING 21.LISTING SOCIAL SHARE 22.ROOM AVAILABILITY CHECK 23.SOCIAL MEDIA SHARE 24.MY ACCOUNT DROP DOWN -------------------------------------------------*/
-/*-------------------------------------------------------*/
-/* 1.COMMON CSS 
-/*-------------------------------------------------------*/
+
  body {
      font-family: 'Poppins', sans-serif;
      font-size: 14px;
@@ -4241,7 +4237,7 @@
      width: 100%;
 }
  .tourz-search-1 {
-     padding: 150px 0px 100px 0px;
+     padding: 100px 0px 100px 0px;
      width: 70%;
      margin: 0 auto;
      text-align: center;
@@ -5555,6 +5551,7 @@
      width: 20%;
 }
  .wed-logo a{
+      
 }
  .wed-logo a img{
      width: 250px;
@@ -5590,6 +5587,24 @@
      background: url(../images/banner.jpeg) no-repeat;
      position: relative;
      background-size: cover;
+}
+.black {
+    background-color:#000;
+    opacity: 0.9;
+    min-height: 100vh;
+}
+.button2 {
+  background-color: #f72f25;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+  margin: 6px 4px;
+  cursor: pointer;
+      font-family: 'Quicksand', sans-serif;
 }
  .wed-search{
 }
