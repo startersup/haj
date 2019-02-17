@@ -509,6 +509,7 @@
      overflow: hidden;
 }
  .v_place_img img {
+     max-height:200px;
      width: 100% !important;
 }
  .b_packages img {
@@ -5054,6 +5055,7 @@
      top: 14px;
      font-size: 14px;
 }
+
  .v2-search-form input {
      background: #fff;
      border: 0px;
@@ -5604,7 +5606,7 @@
   font-size: 28px;
   margin: 6px 4px;
   cursor: pointer;
-      font-family: 'Quicksand', sans-serif;
+   font-family: 'Arimo', sans-serif;
 }
  .wed-search{
 }
