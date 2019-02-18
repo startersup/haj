@@ -723,9 +723,10 @@
      margin-right: 10px;
 }
  .ho-hot-pri {
-     font-size: 38px;
+     font-size: 22px;
      font-weight: 600;
      color: #f4364f;
+     margin-top:-10px;
      float: right;
 }
  .ho-hot-pri-dis {
