@@ -1080,12 +1080,18 @@
      border: 1px solid #ddd;
      font-size: 18px;
 }
- #myTable th, #myTable td {
-     text-align: left;
-     padding: 0px 12px;
+ #myTable td {
+     text-align: center;
+     padding: 12px 10px;
+}
+ #myTable th
+{
+    text-align: center;
+    padding: 0px 5px; 
 }
  #myTable tr {
      border-bottom: 1px solid #ddd;
+     padding:20px 0px;
 }
  #myTable tr.header, #myTable tr:hover {
      background-color: #f1f1f1;
@@ -1254,7 +1260,7 @@
  .form_1 ul li input[type="submit"]:hover {
 }
  .form {
-     background: url(../images/cloud.png) no-repeat bottom center #fff;
+     background: url() no-repeat bottom center #fff;
      padding: 100px 0px 45px 0px;
      background-size: contain;
 }
@@ -4906,7 +4912,7 @@
 /* REGISTER AND LOGIN 
 /*-------------------------------------------------------*/
  .tr-register {
-     background: url(../images/face.jpeg) #e6e6e6;
+     background: url() #e6e6e6;
      position: relative;
     /* overflow: hidden;
      */
