@@ -119,7 +119,7 @@ if($package=="15")
 								<td class="e_h1"><?php echo($date_journey) ?></td>
 								<td class="e_h1"><?php echo($date_end) ?></td>
 								<td class="e_h1">10</td>
-                              <td class="e_h1" ><span class="db-not-done">Less Availability</span>
+                                <td class="e_h1" ><span class="db-not-done">Less Availability</span></td>
                                 <th class="e_h1">₹ 12,500</th>
 								<td>
 								    
@@ -146,7 +146,7 @@ if($package=="15")
 								<td class="e_h1"><?php echo($date_journey) ?></td>
 								<td class="e_h1"><?php echo($date_end) ?></td>
 								<td class="e_h1">10</td>
-                              <td class="e_h1" ><span class="db-done">Available Now</span>
+                            <td class="e_h1" ><span class="db-done">Available Now</span></td>
                                 <th class="e_h1">₹ 12,500</th>
 								<td>
 								<form action="booking.php" method="post" >
@@ -172,7 +172,7 @@ if($package=="15")
 								<td class="e_h1"><?php echo($date_journey) ?></td>
 								<td class="e_h1"><?php echo($date_end) ?></td>
 								<td class="e_h1">10</td>
-                              <td class="e_h1" ><span class="db-done">Available Now</span>
+                               <td class="e_h1" ><span class="db-done">Available Now</span></td>
                                 <th class="e_h1">₹ 12,500</th>
 								<td>
 								
