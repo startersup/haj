@@ -1,4 +1,30 @@
-﻿<!DOCTYPE html>
+ <?php
+ 
+ 
+$date_journey=$_POST['date_journey'];
+
+$package=$_POST['package'];
+
+$adults=$_POST['adults'];
+
+$children=$_POST['children'];
+
+
+
+if($package=="15")
+
+{ $date_end = date("m/d/Y", strtotime($date_journey . ' +15 day'));
+}
+ 
+ if($package=="30")
+
+{ $date_end = date("m/d/Y", strtotime($date_journey . ' +30 day'));
+}
+
+//echo("dsd");
+//echo($package);
+
+ ?>
 <html lang="en">
 <head>
     <title>The Travel - Tour Travel</title>
@@ -89,33 +115,83 @@
 						
 							<tr>
 								<td>23</td>
-								<td>15 days Package </td>
-								<td class="e_h1">16.3.2019</td>
-								<td class="e_h1">03.4.2019</td>
+								<td><?php echo($package) ?> days Package </td>
+								<td class="e_h1"><?php echo($date_journey) ?></td>
+								<td class="e_h1"><?php echo($date_end) ?></td>
 								<td class="e_h1">10</td>
                               <td class="e_h1" ><span class="db-not-done">Less Availability</span>
                                 <th class="e_h1">Rs: 12,500</th>
-								<td><a href="booking.html" class="link-btn">Book Now</a> </td>
+								<td>
+								    
+								    <form action="booking.php" method="post" >
+								    
+								    <input type="hidden" name="date_journey" value="<?php echo($date_journey) ?>">
+								    <input type="hidden" name="date_end" value="<?php echo($date_end) ?>">
+								    <input type="hidden" name="adults" value="<?php echo($adults) ?>">
+								    <input type="hidden" name="children" value="<?php echo($children) ?>">
+								    <input type="hidden" name="price" value="12500">
+								    
+								    <input type="hidden" name="groupid" value="23">
+								    
+								    <input type="hidden" name="package" value="<?php echo($package) ?>">
+								    <button class="link-btn"> Book Now</button>
+								    
+								   </form> 
+								   
+								   </td>
 							</tr>
 						<tr>
 								<td>23</td>
-								<td>15 days Package </td>
-								<td class="e_h1">16.3.2019</td>
-								<td class="e_h1">03.4.2019</td>
+									<td><?php echo($package) ?> days Package </td>
+								<td class="e_h1"><?php echo($date_journey) ?></td>
+								<td class="e_h1"><?php echo($date_end) ?></td>
 								<td class="e_h1">10</td>
                               <td class="e_h1" ><span class="db-done">Available Now</span>
                                 <th class="e_h1">Rs: 12,500</th>
-								<td><a href="booking.html" class="link-btn">Book Now</a> </td>
+								<td>
+								<form action="booking.php" method="post" >
+								    
+								    <input type="hidden" name="date_journey" value="<?php echo($date_journey) ?>">
+								    <input type="hidden" name="date_end" value="<?php echo($date_end) ?>">
+								    <input type="hidden" name="adults" value="<?php echo($adults) ?>">
+								    <input type="hidden" name="children" value="<?php echo($children) ?>">
+								    <input type="hidden" name="price" value="12500">
+								    
+								    <input type="hidden" name="groupid" value="23">
+								    
+								    <input type="hidden" name="package" value="<?php echo($package) ?>">
+								    <button class="link-btn"> Book Now</button>
+								    
+								   </form> 
+								
+								</td>
 							</tr>
                            <tr>
 								<td>23</td>
-								<td>30 days Package </td>
-								<td class="e_h1">16.3.2019</td>
-								<td class="e_h1">03.4.2019</td>
+									<td><?php echo($package) ?> days Package </td>
+								<td class="e_h1"><?php echo($date_journey) ?></td>
+								<td class="e_h1"><?php echo($date_end) ?></td>
 								<td class="e_h1">10</td>
                               <td class="e_h1" ><span class="db-done">Available Now</span>
                                 <th class="e_h1">Rs: 12,500</th>
-								<td><a href="booking.html" class="link-btn">Book Now</a> </td>
+								<td>
+								
+								<form action="booking.php" method="post" >
+								    
+								    <input type="hidden" name="date_journey" value="<?php echo($date_journey) ?>">
+								    <input type="hidden" name="date_end" value="<?php echo($date_end) ?>">
+								    <input type="hidden" name="adults" value="<?php echo($adults) ?>">
+								    <input type="hidden" name="children" value="<?php echo($children) ?>">
+								    <input type="hidden" name="price" value="12500">
+								    
+								    <input type="hidden" name="groupid" value="23">
+								    
+								    <input type="hidden" name="package" value="<?php echo($package) ?>">
+								    <button class="link-btn"> Book Now</button>
+								    
+								   </form> 
+								
+								</td>
 							</tr>
                             
 						</tbody>
