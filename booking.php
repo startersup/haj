@@ -1,4 +1,22 @@
-<!DOCTYPE html>
+<?php
+ 
+ 
+$date_journey=$_POST['date_journey'];
+
+$package=$_POST['package'];
+
+$adults=$_POST['adults'];
+
+$children=$_POST['children'];
+
+$date_end=$_POST['date_end'];
+
+$group_id=$_POST['groupid'];
+
+$price=$_POST['price'];
+
+
+?>
 <html lang="en">
 <head>
     <title>The Travel - Tour Travel</title>
@@ -127,7 +145,18 @@
 			<div class="tr-regi-form v2-search-form">
 				<h4>Booking is so <span>simple</span></h4>
 				<p>No Hidden Chrages Applicable !</p>
-				<form class="contact__form" method="post" action="mail/tourbooking.php">
+				<form action="Confirm.php" method="post" >
+								    
+								    <input type="hidden" name="date_journey" value="<?php echo($date_journey) ?>">
+								    <input type="hidden" name="date_end" value="<?php echo($date_end) ?>">
+								    <input type="hidden" name="adults" value="<?php echo($adults) ?>">
+								    <input type="hidden" name="children" value="<?php echo($children) ?>">
+								    <input type="hidden" name="price" value="<?php echo($price) ?>">
+								    
+								    <input type="hidden" name="groupid" value="<?php echo($group_id) ?>">
+								    
+								    <input type="hidden" name="package" value="<?php echo($package) ?>">
+								    
 							<div class="alert alert-success contact__msg" style="display: none" role="alert">
 								Thank you for arranging a wonderful trip for us! Our team will contact you shortly!
 							</div>
@@ -153,41 +182,7 @@
 									<label for="select-city-1">Select City or Place</label>
 								</div>
 							</div>
-							<div class="row">
-								<div class="input-field col s6">
-									<input type="text" id="from" name="arrival" readonly="">
-									<label for="from">Starting Date</label>
-								</div>
-								<div class="input-field col s6">
-									<input type="text" id="to" name="departure" readonly="">
-									<label for="to">Returning Date</label>
-								</div>
-							</div>
-							<div class="row">
-								<div class="input-field col s6">
-									<select name="noofadults">
-										<option value="" disabled="" selected="">No of adults</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>
-									</select>
-								</div>
-								<div class="input-field col s6">
-									<select name="noofchildrens">
-										<option value="" disabled="" selected="">No of childrens</option>
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
-										<option value="6">6</option>											
-									</select>
-								</div>
-							</div>							
-				
+						
 							<div class="row">
 								<div class="input-field col s12">
 									<input type="submit" value="Book Now" class="waves-effect waves-light tourz-sear-btn v2-ser-btn">
