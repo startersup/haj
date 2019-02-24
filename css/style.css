@@ -63,6 +63,31 @@
      -o-transition: all 0.5s ease;
      color: #fff;
 }
+.link-btn1
+{
+   
+     text-transform: uppercase;
+     font-weight: 700;
+     text-decoration: none;
+     padding: 6px 15px;
+     border-radius: 2px;
+     display: inline-block;
+     font-family: 'Quicksand', sans-serif;
+     text-decoration: none;
+     display: inline-block;
+     cursor: pointer;
+     color: #fff !important;
+    /* font-family: Arial;
+     */
+     font-size: 13px;
+     transition: all 0.5s ease;
+     -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     background: #f4364f;
+     background: linear-gradient(to bottom, #2D5D73, #2D5D73);
+}
  .div {
      transition: all 0.5s ease;
      -webkit-transition: all 0.5s ease;
@@ -257,6 +282,58 @@
      display: inline-block;
      background: #eee;
 }
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
 /*-------------------------------------------------------*/
 /* 3.NAVIGATION MENU(NOTE:OTHER NAVIGATION CSS FILES FIND ON BOOTSTRAP.CSS ) 
 /*-------------------------------------------------------*/
@@ -5074,7 +5151,7 @@
      border: 1px solid #efefef;
 }
  .v2-hom-search {
-     background: url(../images/slider/1.jpeg) no-repeat;
+     background: url(../images/slider/1.jpg) no-repeat;
      position: relative;
      background-size: cover;
      padding: 100px 0px;
