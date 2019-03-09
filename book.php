@@ -35,6 +35,9 @@ if($package=="15")
     <link rel="shortcut icon" href="images/logo.png">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:400,500,700" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- FONT-AWESOME ICON CSS -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!--== ALL CSS FILES ==-->
@@ -87,119 +90,108 @@ if($package=="15")
     
 
 	<!--====== EVENTS ==========-->
-	<section>
-		<div class="rows inn-page-bg com-colo">
-			<div class="container inn-page-con-bg events events-1 tb-space" id="inner-page-title">
-				<!-- TITLE & DESCRIPTION -->
-<div class="spe-title spe-title-1" style="margin-top:-30px;">
-                    <h2>Booking <span>Quotes</span> </h2>
-                    <div class="title-line">
-                        <div class="tl-1"></div>
-                        <div class="tl-2"></div>
-                        <div class="tl-3"></div>
-                    </div>
-                </div>
-				<div class="col-md-12">
-					<table id="myTable">
-						<tbody>
-							<tr>
-								<th>Group Id</th>
-                                 <th class="e_h1">Package</th>
-                                <th class="e_h1">Starting Date</th>
-								<th class="e_h1">Returning Date</th>
-                                <th class="e_h1">Seats Filled</th>
-								<th class="e_h1">Seats Availabilty</th>
-                                <th class="e_h1">Net Amount</th>
-                              	<th>Book</th>
-							</tr>
-						
-							<tr>
-								<td>23</td>
-								<td><?php echo($package) ?> days Package </td>
-								<td class="e_h1"><?php echo($date_journey) ?></td>
-								<td class="e_h1"><?php echo($date_end) ?></td>
-								<td class="e_h1">10</td>
-                                <td class="e_h1" ><span class="db-not-done">Less Availability</span></td>
-                                <th class="e_h1">₹ 12,500</th>
-								<td>
-								    
-								    <form action="booking.php" method="post" >
-								    
-								    <input type="hidden" name="date_journey" value="<?php echo($date_journey) ?>">
-								    <input type="hidden" name="date_end" value="<?php echo($date_end) ?>">
-								    <input type="hidden" name="adults" value="<?php echo($adults) ?>">
-								    <input type="hidden" name="children" value="<?php echo($children) ?>">
-								    <input type="hidden" name="price" value="12500">
-								    
-								    <input type="hidden" name="groupid" value="23">
-								    
-								    <input type="hidden" name="package" value="<?php echo($package) ?>">
-								    <button class="link-btn"> Book Now</button>
-								    
-								   </form> 
-								   
-								   </td>
-							</tr>
-						<tr>
-								<td>23</td>
-									<td><?php echo($package) ?> days Package </td>
-								<td class="e_h1"><?php echo($date_journey) ?></td>
-								<td class="e_h1"><?php echo($date_end) ?></td>
-								<td class="e_h1">10</td>
-                            <td class="e_h1" ><span class="db-done">Available Now</span></td>
-                                <th class="e_h1">₹ 12,500</th>
-								<td>
-								<form action="booking.php" method="post" >
-								    
-								    <input type="hidden" name="date_journey" value="<?php echo($date_journey) ?>">
-								    <input type="hidden" name="date_end" value="<?php echo($date_end) ?>">
-								    <input type="hidden" name="adults" value="<?php echo($adults) ?>">
-								    <input type="hidden" name="children" value="<?php echo($children) ?>">
-								    <input type="hidden" name="price" value="12500">
-								    
-								    <input type="hidden" name="groupid" value="23">
-								    
-								    <input type="hidden" name="package" value="<?php echo($package) ?>">
-								    <button class="link-btn"> Book Now</button>
-								    
-								   </form> 
-								
-								</td>
-							</tr>
-                           <tr>
-								<td>23</td>
-									<td><?php echo($package) ?> days Package </td>
-								<td class="e_h1"><?php echo($date_journey) ?></td>
-								<td class="e_h1"><?php echo($date_end) ?></td>
-								<td class="e_h1">10</td>
-                               <td class="e_h1" ><span class="db-done">Available Now</span></td>
-                                <th class="e_h1">₹ 12,500</th>
-								<td>
-								
-								<form action="booking.php" method="post" >
-								    
-								    <input type="hidden" name="date_journey" value="<?php echo($date_journey) ?>">
-								    <input type="hidden" name="date_end" value="<?php echo($date_end) ?>">
-								    <input type="hidden" name="adults" value="<?php echo($adults) ?>">
-								    <input type="hidden" name="children" value="<?php echo($children) ?>">
-								    <input type="hidden" name="price" value="12500">
-								    
-								    <input type="hidden" name="groupid" value="23">
-								    
-								    <input type="hidden" name="package" value="<?php echo($package) ?>">
-								    <button class="link-btn"> Book Now</button>
-								    
-								   </form> 
-								
-								</td>
-							</tr>
-                            
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</section>
+<section class="book">
+    <div clas="container">
+    <div class="container-fluid bg-gradient p-5">
+      <div class="row m-auto text-center w-75">
+        
+        <div class="col-md-4 princing-item " style="margin-top:10px;">
+          <div class="pricing-divider green">
+              <h3 class="text-light">ECONOMY</h3>
+            <p class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">INR</span> 55,000/- </p>
+             <svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+          <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+          <path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+          <path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+          <path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+        </svg>
+          </div>
+          <div class="card-body bg-white mt-0 shadow">
+            <ul class="list-unstyled mb-5 position-relative">
+                <li><b>Group Number :</b> 32</li>
+              <li><b>Starting Date :</b> 29/02/2019</li>
+                 <li><b>Returning Date :</b> 29/02/2019</li>
+              <li><b>Accomodation</b> within 350 mts from haram</li>
+              <li><b>Ziyarah -</b>Mecca, Madinah, Taif  </li>
+              <li><b>South Indian Cuisine</b></li>
+            </ul>
+            <input type="submit" value="Book Trip Now" class="waves-effect waves-light tourz-sear-btn v2-ser-btn">
+          </div>
+        </div>
+       
+
+        
+        
+        <div class="col-md-4 princing-item " style="margin-top:10px;">
+          <div class="pricing-divider blue">
+              <h3 class="text-light">5 STAR</h3>
+                 <p class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">INR</span> 55,000/- </p>
+             <svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+          <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+          <path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+          <path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+          <path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+        </svg>
+          </div>
+
+                  <div class="card-body bg-white mt-0 shadow">
+            <ul class="list-unstyled mb-5 position-relative">
+                <li><b>Group Number :</b> 33</li>
+              <li><b>Starting Date :</b> 29/02/2019</li>
+                 <li><b>Returning Date :</b> 29/02/2019</li>
+              <li><b>Accomodation</b> within 350 mts from haram</li>
+              <li><b>Ziyarah -</b>Mecca, Madinah, Taif  </li>
+              <li><b>South Indian Cuisine</b></li>
+            </ul>
+            <input type="submit" value="Book Trip Now" class="waves-effect waves-light tourz-sear-btn v2-ser-btn">
+          </div>
+        </div>
+               
+        
+  
+        
+        
+         
+        <div class="col-md-4 princing-item " style="margin-top:10px;">
+          <div class="pricing-divider ">
+              <h3 class="text-light">RAMADHAAN</h3>
+                <p class="my-0 display-2 text-light font-weight-normal mb-3"><span class="h3">INR</span> 70,000/- </p>
+             <svg class='pricing-divider-img' enable-background='new 0 0 300 100' height='100px' id='Layer_1' preserveAspectRatio='none' version='1.1' viewBox='0 0 300 100' width='300px' x='0px' xml:space='preserve' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns='http://www.w3.org/2000/svg' y='0px'>
+          <path class='deco-layer deco-layer--1' d='M30.913,43.944c0,0,42.911-34.464,87.51-14.191c77.31,35.14,113.304-1.952,146.638-4.729
+	c48.654-4.056,69.94,16.218,69.94,16.218v54.396H30.913V43.944z' fill='#FFFFFF' opacity='0.6'></path>
+          <path class='deco-layer deco-layer--2' d='M-35.667,44.628c0,0,42.91-34.463,87.51-14.191c77.31,35.141,113.304-1.952,146.639-4.729
+	c48.653-4.055,69.939,16.218,69.939,16.218v54.396H-35.667V44.628z' fill='#FFFFFF' opacity='0.6'></path>
+          <path class='deco-layer deco-layer--3' d='M43.415,98.342c0,0,48.283-68.927,109.133-68.927c65.886,0,97.983,67.914,97.983,67.914v3.716
+	H42.401L43.415,98.342z' fill='#FFFFFF' opacity='0.7'></path>
+          <path class='deco-layer deco-layer--4' d='M-34.667,62.998c0,0,56-45.667,120.316-27.839C167.484,57.842,197,41.332,232.286,30.428
+	c53.07-16.399,104.047,36.903,104.047,36.903l1.333,36.667l-372-2.954L-34.667,62.998z' fill='#FFFFFF'></path>
+        </svg>
+          </div>
+
+         <div class="card-body bg-white mt-0 shadow">
+            <ul class="list-unstyled mb-5 position-relative">
+                <li><b>Group Number :</b> 34</li>
+              <li><b>Starting Date :</b> 29/02/2019</li>
+                 <li><b>Returning Date :</b> 29/02/2019</li>
+              <li><b>Accomodation</b> within 350 mts from haram</li>
+              <li><b>Ziyarah -</b>Mecca, Madinah, Taif  </li>
+              <li><b>South Indian Cuisine</b></li>
+            </ul><input type="submit" value="Book Trip Now" class="waves-effect waves-light tourz-sear-btn v2-ser-btn">
+          
+          </div>
+          </div>      
+      </div>
+    </div>
+    </div>
+    </section>
 	 <!--====== FOOTER 2 ==========-->
     <section>
         <div class="rows">
@@ -265,6 +257,68 @@ if($package=="15")
     <script src="js/wow.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/custom.js"></script>
+    <style>.bg-gradient {
+background: #C9D6FF;
+background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+} 
+ul li {
+  margin-bottom:1.4rem;
+}
+.pricing-divider {
+border-radius: 20px;
+background: #C64545;
+padding: 1em 0 4em;
+position: relative;
+}
+.blue .pricing-divider{
+background: #2D5772; 
+}
+.green .pricing-divider {
+background: #1AA85C; 
+}
+.red b {
+  color:#C64545
+}
+.blue b {
+  color:#2D5772
+}
+.green b {
+  color:#1AA85C
+}
+.pricing-divider-img {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 100%;
+	height: 80px;
+}
+.deco-layer {
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+.btn-custom  {
+  background:#C64545; color:#fff; border-radius:20px
+}
+
+.img-float {
+  width:50px; position:absolute;top:-3.5rem;right:1rem
+}
+
+.princing-item {
+  transition: all 150ms ease-out;
+}
+.princing-item:hover {
+  transform: scale(1.05);
+}
+.princing-item:hover .deco-layer--1 {
+  -webkit-transform: translate3d(15px, 0, 0);
+  transform: translate3d(15px, 0, 0);
+}
+.princing-item:hover .deco-layer--2 {
+  -webkit-transform: translate3d(-15px, 0, 0);
+  transform: translate3d(-15px, 0, 0);
+}</style>
 </body>
 
 </html>
